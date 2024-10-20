@@ -1,0 +1,220 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Common CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --poppins: "Poppins", sans-serif; 
+    --text-color: #000000;
+    --highlight-color: #B00000;
+    --secondary-color: #DAD8D8;
+    --inter:"Inter", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px; /* Added gap between navbar items */
+}
+
+.nav-link {
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    padding: 0 15px;
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--highlight-color);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.4s linear;
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+}
+
+/* Specific Navbar Elements */
+.six {
+    color: var(--secondary-color) !important;
+    transform: rotate(-15deg);
+    position: relative;
+}
+
+.six::after {
+    content: none;
+}
+.bi {
+    color: var(--highlight-color);
+    margin-left: 0;
+    padding-right: 15px;
+}
+
+.alu {
+    margin-top: 8px;
+}
+
+.five {
+    margin-left: 54px;
+}
+
+/* Main Section */
+.main {
+    padding-bottom: 80px;
+}
+.ni{
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: #000000;
+
+}
+
+/* ===============================Premium Section start ==================== */
+.zero {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.zero ul {
+    list-style: none; 
+    display: flex; 
+    gap: 20px;
+}
+
+.zero-link {
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--highlight-color);
+    position: relative;
+}
+
+.zero-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--highlight-color);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.4s linear;
+}
+
+.zero-link:hover::after {
+    transform: scale(1);
+}
+.main-heading{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    color: var(--text-color);
+    width: 608px;
+    padding-top: 10px;
+}
+.heading2{
+    padding-top: 50px;
+    color: #808080;
+    width: 448px;
+    font-size: 16px;
+    font-family: var(--inter);
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.create{
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+    color: #ffffff;
+    background: #B00000;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+.create:active{
+    transform: scale(0.9);
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+.choose{
+    border-radius: 8px;
+    color: #111;
+    border: none;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+    font-size: 14px;
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+.choose:active{
+    transform: scale(0.9);
+}
+.text-main{
+    display: flex;
+    justify-content: space-between;
+}
+.cloud-heading{
+    padding-top: 30px;
+    font-size: 48;
+    font-weight: 800;
+    font-family: var(--inter);
+    color: #18191F;
+    word-spacing: 2px;
+    padding-bottom: 20px;
+}
+.cloud-para{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter);
+    color: #18191F;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 573px;
+}
+.main-cloud{
+    display: flex;
+    gap: 20px;
+} 
+.logo-one{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.logo-one img{
+    width: 30px;
+}
